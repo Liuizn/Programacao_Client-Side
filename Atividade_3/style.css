@@ -29,15 +29,15 @@ nav {
     display: flex;
     background-color: #1A1717;
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 136px;
-    height: 55px;
+    width: 126px;
+    height: 45px;
     background-color: #ED5656;
     margin: auto;
     border-radius: 90px;
@@ -55,22 +55,28 @@ nav p {
 }
 
 #en-rd {
-    width: 190px;
+    width: 180px;
 }
 
 /* Formatando Conteúdo */
 
 /* Área Cadastro e Login */
 #login_cadastro {
+    width: 80%;
     display: flex;
+    flex-direction: ;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 
+/* Formatação caixas */
 .area {
-    width: 560px;
-    height: 558px;
+    width: 550px;
+    height: 550px;
     background: #FFF2F2;
     border-radius: 45px;
 }
@@ -78,15 +84,106 @@ nav p {
 .cabecalho-login_cadastro {
     display: flex;
     background:#E25252;
-    width: 560px;
-    height: 79px;
+    width: 550px;
+    height: 80px;
     border-radius: 45px 45px 0px 0px;
 }
 
 .cabecalho-login_cadastro h1 {
-    font-size: 36px;
+    font-size: 35px;
     margin: auto;
 }
+
+/* Formulário de Login */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.login input {
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #F5BBBB;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+}
+
+.login ::placeholder {
+    text-align: center;
+    color: #000;
+}
+
+.email-senha {
+    width: 80%;
+}
+
+#enviar {
+    width: 15%;
+}
+
+/* Formatação formulário Cadastro. */
+.cadastro {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.cadastro input {
+    font-size: 16px;
+    margin-top: 35px;
+    background-color: #F5BBBB;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+}
+
+.cadastro ::placeholder {
+    text-align: center;
+    color: #000;
+}
+
+
+
+#linha input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Botões de logar com rede Social (Google Instagram e Facebook) */
+
+.rsociais {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 28px;
+}
+
+.botoes-rsociais {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+
+
+.botoes-rsociais li {
+
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #F5BBBB;
+}
+.botoes-rsociais a {
+    color: #000;
+}
+
+
 
 /* Área Propagandas */
 
@@ -101,24 +198,24 @@ nav p {
     display: flex;
     position: relative;
     background-color: #FCE7B7;
-    border: 1px solid red;
+
     width: 96%;
-    height: 680px;
+    height: 580px;
     margin-left: auto;
     margin-right: auto;
 }
 .formatacao-img {
     display: flex;
     width: 50%;
-    height: 680px;
+    height: 580px;
 }
 
 .conteudo-promo {
-    border: 1px solid blue;
+
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 680px;
+    height: 580px;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -130,15 +227,15 @@ nav p {
     margin-left: auto;
     margin-right: auto;
     font-size: 48px;
-    border: 1px solid orangered;
+
 }
 
 .conteudo-promo p {
-    border: 1px solid yellowgreen;
-    font-size: 35px;
+
+    font-size: 30px;
     width: 65%;
     height: 300px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }

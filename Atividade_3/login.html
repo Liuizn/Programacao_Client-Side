@@ -24,15 +24,53 @@
 
     <div id="login_cadastro">
         <article class="area">
+
             <div class="cabecalho-login_cadastro">
                 <h1>Faça o seu Login</h1>
             </div>
+
+            <form action="Login" class="login">
+
+                <input type="email" name="e-mail" id="e-mail" class="email-senha" placeholder="E-mail | Celular">
+
+                <input type="password" name="Senha" id="senha" class="email-senha" placeholder="Senha">
+
+                <input type="button" value="Enviar" id="enviar">
+            </form>
+
+            <div class="rsociais">
+                <h1>Entre com redes sociais</h1>
+                <ul class="botoes-rsociais">
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+
         </article>
 
         <article class="area">
             <div class="cabecalho-login_cadastro">
                 <h1>Faça o seu Cadastro</h1>
             </div>
+
+            <form action="cadastro" class="cadastro">
+                <input type="email" name="e-mail" id="e-mail" class="email-senha" placeholder="E-mail | Celular">
+
+                <div id="linha">
+                    <input type="password" name="senha" id="senha-c" placeholder="senha">
+                    <input type="password" name="senha" id="senha-c" placeholder="Confirme Senha">
+                </div>
+
+                <div id="linha">
+                    <input type="number" name="CEP" id="CEP" placeholder="CEP">
+
+                    <input type="number" name="CPF" id="CPF" placeholder="CPF">
+
+                </div>
+
+                <input type="button" value="Enviar" id="enviar">
+            </form>
         </article>
     </div>
 
