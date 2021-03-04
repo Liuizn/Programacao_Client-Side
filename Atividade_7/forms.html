@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            display: block;
+            width: 600px;
+        }
+
+        .espacamento {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Formulário HTML</h1>
+
+    <div class="container">
+        <form action="formulario/teste" method="POST">
+            <fieldset>
+                <legend>Insira os Dados</legend>
+                <div class="espacamento">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" size="46" placeholder="Digite seu nome">
+                </div>
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="e-mail">E-mail: </label>
+                    <input type="email" id="email" name="email" size="46">
+                </div>
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="e-mail">Telefone: </label>
+                    <input type="email" id="email" name="email" size="46">
+                </div>
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="use apenas caracteres" size="46">
+                </div>
+
+                <br>
+
+
+                    <label for="nasc">Nascimento: </label>
+                    <input type="date" id="nasc" name="nasc"
+                    style="margin-left:125px;">
+
+
+                <br><br>
+
+
+                <div class="espacamento">
+                    <label for="Transporte">Gênero Musical Favorito: </label>
+                    <br>
+
+                        <div style="margin-right: 270px;">
+                            <input type="checkbox" name="axe" id="axe">
+                            <label for="axe">Axé</label>
+                            <br>
+
+                            <input type="checkbox" name="pop" id="pop">
+                            <label for="Pop">Pop</label>
+                            <br>
+
+                            <input type="checkbox" name="celta" id="celta">
+                            <label for="celta">Celta</label>
+                            <br>
+
+                            <input type="checkbox" name="rock" id="rock">
+                            <label for="celta">Rock</label>
+                            <br>
+
+                            <input type="checkbox" name="celta" id="celta">
+                            <label for="celta">Samba</label>
+                            <br>
+
+                            <input type="checkbox" name="celta" id="celta">
+                            <label for="celta">Pagode</label>
+                            <br>
+
+                            <input type="checkbox" name="celta" id="celta">
+                            <label for="celta">Sertanejo</label>
+                            <br>
+
+                            <input type="checkbox" name="celta" id="celta">
+                            <label for="celta">Eletrônica</label>
+                        </div>
+
+                </div>
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="enquete">Receber Notícias por E-mail:</label>
+
+                    <div style="margin-right:245px;">
+                        <input type="radio" id="Sim" name="enquete">
+                        <label for="Sim">SIM</label>
+                        <input type="radio" id="nao" name="enquete">
+                        <label for="Não">NÃO</label>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="estado" id="Etiqueta">Estado:</label>
+                    <select name="estado" id="estado" style="margin-right: 195px;">
+                        <option value selected>--Selecione--</option>
+                        <option value="DF">Distrito Federal</option>
+                        <optgroup label="Nordeste">
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceara">Ceará</option>
+                            <option value="Maranhao">Maranhão</option>
+                            <option value="Paraiba">Paraíba</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piaui">Piauí</option>
+                            <option value="rgdnorte">Rio Grande do Norte</option>
+                            <option value="Sergipe">Sergipe</option>
+                        </optgroup>
+
+                        <optgroup label="Norte">
+                            <option value="Tocantins">Tocantins</option>
+                            <option value="Para">Pará</option>
+                            <option value="Amapa">Amapá</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Acre">Acre</option>
+                        </optgroup>
+
+                        <optgroup label="Centro-Oeste">
+                            <option value="Mato-Grosso">Mato Grosso</option>
+                            <option value="Mato-GrossoSul">Mato Grosso Sul</option>
+                            <option value="Goias">Goiás</option>
+                        </optgroup>
+
+                        <optgroup label="Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </optgroup>
+
+                        <optgroup label="Sul">
+                            <option value="Paraná">Paraná</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+
+                <br>
+
+                <div class="espacamento">
+                    <label for="feedback">Comentário</label>
+                    
+                    <textarea name="feedback" id="feedback" cols="20" rows="5" maxlength="200" style="margin-right: 195px;"></textarea>
+                </div>
+                
+                <input type="submit" value="Enviar" id="enviar" name="enviar">
+                <input type="reset" value="Limpa">
+                <input type="submit" value="salvar">
+                <button><img src="img-rubao.jpeg" width="60px" height="60px" alt=""></button>
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
