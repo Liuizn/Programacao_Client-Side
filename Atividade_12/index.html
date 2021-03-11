@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #003F63
+        }
+
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            width: 960px;
+            background-color: #353D40;
+            border-radius: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 240px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-image: url(imgs/banner.png);
+            border-radius: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 60px;
+            margin-bottom: 10px;
+            background-color: #F2B138;
+            border-radius: 20px;
+        }
+
+        .navv {
+            width: 880px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navv li a{
+            text-decoration: none;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 10px 20px 10px 20px;
+            background-color: #D9D9D9;
+            border-radius: 40px;
+            color: #000000;
+        }
+
+        .navv input{
+            border: none;
+            background-color: #e6dfdf;
+            margin-left: 10px;
+            margin-right: 150px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+        }
+
+        .formatacao {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: #000000;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 660px;
+            height: 700px;
+            background-color: rgba(96, 150, 223, 0.7);
+        }
+
+        aside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 230px;
+            height: 700px;
+        }
+
+        .formatacao-fotos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formatacao-fotos img {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 50px;
+            background-color: #A1A5A6;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+
+        </header>
+
+        <nav>
+            <ul class="navv">
+                <input type="text" placeholder="Pesquise aqui">
+               <li><a href="#">Home</a></li>
+               <li><a href="">Sobre</a></li>
+               <li><a href="">Compre Já</a></li>
+               <li><a href="">Fotos</a></li>
+            </ul>
+        </nav>
+
+        <div class="formatacao">
+            <aside>
+                <div class="formatacao-fotos">
+                    <img src="imgs/imgs-footer/angularjs.png" alt="">
+                    <img src="imgs/imgs-footer/c--1.png.png" alt="">
+                    <img src="imgs/imgs-footer/images.png" alt="">
+                </div>
+            </aside>
+
+            <main>
+                <h1>Main</h1>
+            </main>
+        </div>
+
+        <footer>
+            <h3><a href="https://www.linkedin.com/in/luiz-gabriel-dos-santos-nogueira-1281981a2/" target="_blank">Liuizn</a>| Tecnologias que vou estudar</h3>
+        </footer>
+    </div>
+</body>
+</html>
