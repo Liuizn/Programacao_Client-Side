@@ -110,7 +110,7 @@ main {
     margin-right: 12px;
     width: 300px;
     height: 680px;
-    border: 1px solid blue;
+
 }
 
 .container-main img {
@@ -125,7 +125,6 @@ main {
 
 #foto-linguagem {
     display: block;
-    border: 1px solid purple;
     width: 660px;
     height: 345px;
 }
