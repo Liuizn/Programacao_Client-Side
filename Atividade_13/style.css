@@ -58,6 +58,7 @@ header {
 
 }
 
+
 .nav2 ul {
     width: 70%;
     display: flex;
@@ -100,7 +101,7 @@ main p {
 }
 
 #purplee {
-    background-color: #5271FF;
+    background-color: #5271ff;
 }
 
 #redd {
