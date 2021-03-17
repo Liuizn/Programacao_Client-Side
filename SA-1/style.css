@@ -59,7 +59,7 @@ header {
 }
 
 .nav2 ul {
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,7 +118,6 @@ main article {
 }
 
 #Bem-Vindo p {
-    margin-top: 20px;
     text-align: justify;
 }
 
@@ -150,6 +149,10 @@ main article {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#Primeiro-contato h1{
+    font-size: 2.8em;
 }
 
 #Primeiro-contato p {
@@ -187,6 +190,7 @@ main article {
 #CEMCC h2 {
     margin-top: 10px;
     margin-bottom: 30px;
+    font-size: 2.8em;
 }
 
 #CEMCC img {
@@ -299,6 +303,17 @@ footer {
     margin-top: 20px;
 }
 
+@media only screen and (width:500px){
+    #bg {
+        display: none;
+    }
+
+    #logo {
+        width: 480px;
+        height: 500px;
+    
+    }
+}
 
 
 
