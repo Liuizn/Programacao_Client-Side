@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: #f1eded
 }
 
@@ -109,6 +109,11 @@ main article {
     width: 90%;
 }
 
+.formatacao-article {
+    display: flex;
+    flex-direction: row;
+}
+
 #Bem-Vindo {
     display: flex;
     flex-direction: column;
@@ -178,6 +183,19 @@ main article {
     margin-bottom: 10px;
 }
 
+#Bootstlander {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Bootstlander h2 {
+    margin-bottom: 10px;
+}
+
 
 #CEMCC {
     display: flex;
@@ -187,11 +205,6 @@ main article {
     align-items: center;
 }
 
-#CEMCC h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 2.8em;
-}
 
 #CEMCC img {
     width: 90%;
@@ -240,11 +253,6 @@ main article {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-#noticia-cidade h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 #noticia-cidade img {
