@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Zerando margin e Padding e Aplicando Fonte*/
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif !important;
-    color: #f1eded
+    color: #f1eded;
 }
 
+/* Background */
 body {
     background-color: #161414;
 }
+
+/* 1° Menu de Navegação (ínicio) */
 
 .nav {
     display: flex;
     justify-content: center;
     width: 100%;
-
 }
 
 .nav ul {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +34,7 @@ body {
     padding: 10px;
 }
 
-.nav a{
+.nav a {
     color: #F1F1F1;
     text-decoration: none;
     font-size: 20px;
@@ -41,6 +44,9 @@ body {
     color: #161414 !important;
 }
 
+/* 1° Menu de Navegação (Fim) */
+
+/* configuração logo e background */
 header {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -50,6 +56,7 @@ header {
     width: 100%;
 }
 
+/* 2° Menu de Navegação (ínicio) */
 
 .nav2 {
     display: flex;
@@ -59,7 +66,7 @@ header {
 }
 
 .nav2 ul {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,7 +78,7 @@ header {
     padding: 10px;
 }
 
-.nav2 a{
+.nav2 a {
     color: #F1F1F1;
     text-decoration: none;
     font-size: 16px;
@@ -81,11 +88,13 @@ header {
     color: #161414 !important;
 }
 
+/* 2° Menu de Navegação (Fim) */
+
+/* Inicio formatação do container */
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     margin: 0 auto;
     width: 90%;
     margin-top: 30px;
@@ -109,12 +118,19 @@ main article {
     width: 90%;
 }
 
+/* Espaçamento entre fotos de projetos */
+#projeto {
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+/* Formatação dos Articles "Projetos" (ínicio) */
 .formatacao-article {
     display: flex;
     flex-direction: row;
 }
 
-#Bem-Vindo {
+.artigos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -122,144 +138,238 @@ main article {
     align-items: center;
 }
 
-#Bem-Vindo p {
-    text-align: justify;
+.artigos h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
 }
 
-#Bem-Vindo img {
-    border-radius: 20px;
+.artigos img {
+    width: 90%;
     margin-top: 20px;
 }
 
-#Sobre {
+/* Formatação dos Articles "Projetos" (Fim) */
+
+/* Formatação dos Containers na Home (Ínicio) */
+
+.form-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pai {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-individual {
+    width: 40%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 30px 15px 30px;
+}
+
+.container-individual img {
+    margin: 30px 0px 15px 30px;
+    border-radius: 20px;
+    border: 5px solid #532f53;
+}
+
+.container-individual h1 {
+    font-size: 2em;
+    margin: 30px auto 0px auto;
+}
+
+.container-individual h2 {
+    font-size: 1.5em;
+    margin: 15px 0px 0px 45px;
+}
+
+.container-individual p {
+    margin: 15px 30px 15px 30px;
+    font-size: 18px;
+}
+
+.container-individual input {
+    display: flex;
+    margin: 15px 0px 15px 30px;
+    justify-content: center;
+    border-radius: 20px;
+    width: 160px;
+    padding: 10px;
+    color: white;
+    background-color: #3348a3;
+    border-style: none;
+}
+
+.container-triplo {
+    margin-top: 200px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textto {
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-}
-
-#Sobre p {
-    margin-top: 20px;
-    text-align:justify
-}
-
-#Sobre img {
-    margin-top: 20px;
-    border-radius: 20px;
-}
-
-#Primeiro-contato {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#Primeiro-contato h1{
-    font-size: 2.8em;
-}
-
-#Primeiro-contato p {
-    margin-top: 20px;
     text-align: justify;
 }
 
-#Primeiro-contato img {
+.textto h2 {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.textto p {
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+.foto img {
     border-radius: 20px;
-    margin-top: 20px;
 }
 
-#blog-tec {
-    margin-top: 20px;
+
+.fotos-clientes {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fotos-clientes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 4px solid #5271ff;
+}
+
+.container-tabela {
+    margin-top: 200px;
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
 
-#blog-tec h2 {
-    margin-bottom: 10px;
+.tabela {
+    background: #572d57;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
 }
 
-#Bootstlander {
-    margin-top: 20px;
+.tabela hr {
+    color: white;
+}
+
+.tabela-linha {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
-#Bootstlander h2 {
-    margin-bottom: 10px;
-}
-
-
-#CEMCC {
+.tabela-celula {
+    width: 25%;
+    height: 123px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
+.tabela-celula h1{
+    font-size: 1.2em;
+}
 
-#CEMCC img {
+.tabela-celula h2 {
+    font-size: 1.0em;
+}
+
+.container-pai-progressbar {
+    border-radius: 15px;
+    background: #361f36;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 0px 30px;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+
+}
+
+.tec-progress {
+    margin: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 90%;
-    margin-top: 20px;
 }
 
-#chale-hotel {
+.container-progressbar {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 26px;
+    background-color: #c2a1a1;
+    position: relative;
 }
 
-#chale-hotel h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-#chale-hotel img {
-    width: 90%;
-    margin-top: 20px;
-}
-
-#museu-nacional {
+.container-progressbar .progress-bar {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    height: 100%;
+    background-color: #3348a3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-#museu-nacional h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
+#cem {
+    width: 100%;
 }
 
-#museu-nacional img {
-    width: 90%;
-    margin-top: 20px;
+#oitenta {
+    width: 80%;
 }
 
-#noticia-cidade {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+#setentacinco {
+    width: 75%;
 }
 
-#noticia-cidade img {
-    width: 90%;
-    margin-top: 20px;
+#cinquenta {
+    width: 50%;
 }
 
+#vintecinco {
+    width: 25%;
+}
+
+#cinco {
+    width: 10%;
+}
+/* Formatação dos Containers na Home (Fim) */
+
+/* Fim formatação do container */
+
+/* Início cores das páginas */
 #purplee {
     background-color: #5271ff;
 }
@@ -272,14 +382,17 @@ main article {
     background-color: #4FA62A;
 }
 
-.icons h2:hover{
+.icons h2:hover {
     color: #CF2323 !important;
 }
 
+/* Fim cores das Páginas */
+
+/* Inicio da formatacao dos Ícones */
 .icons-formatacao {
     display: flex;
     flex-direction: column;
-    justify-content:left;
+    justify-content: left;
     width: 90%;
 }
 
@@ -302,16 +415,20 @@ main article {
     margin-right: 400px;
 }
 
+/* Fim da formatacao dos Ícones */
+
+/* Rodapé */
 footer {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-@media only screen and (width:500px){
+
+@media only screen and (width:500px) {
     #bg {
         display: none;
     }
@@ -319,11 +436,6 @@ footer {
     #logo {
         width: 480px;
         height: 500px;
-    
+
     }
 }
-
-
-
-
-
