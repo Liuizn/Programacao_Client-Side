@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        body {
+            background-color: teal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            color: black;
+        }
+
+        button {
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Atividade 15</h1>
+    <br>
+
+    <div class="container">
+        <h2>Qual a sua idade?</h2>
+        <input type="number" name="" id="idade">
+        <button onclick="resultado()">Enviar</button>
+
+        <p id="txt">**Aguardando Resposta</p>
+    </div>
+
+    <script>
+        function resultado() {
+            let idade = parseInt(document.getElementById("idade").value)
+
+            let txt = document.getElementById("txt")
+
+            if (idade >= 5 && idade <= 7) {
+                txt.innerHTML = ("Você é da classe Infantil A")
+            } else if (idade >= 8 && idade <= 10) {
+                txt.innerHTML = ("Você é da classe Infantil B")
+            } else if (idade >= 11 && idade <= 13) {
+                txt.innerHTML = ("Você é da classe Juvenil A")
+            } else if (idade >= 14 && idade <= 17){
+                txt.innerHTML = ("Você é da classe Infantil B")
+            } else if (idade >= 18 && idade <= 25) {
+                txt.innerHTML = ("Você é da Sênior")
+            } else {
+                txt.innerHTML = ("Idade fora de qualquer categoria.")
+            }
+                
+        }
+    </script>
+</body>
+</html>

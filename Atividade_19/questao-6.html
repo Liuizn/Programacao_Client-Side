@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculo Peças</h1>
+    <div>
+        <h2>Item 1</h2>
+        <input type="number" placeholder="Insira o Código da 1 peça" id="cod-1">
+        <input type="number" placeholder="Quantidade de peças." id="quantidade1">
+        <input type="number" placeholder="Valor unitário" id="valor1">
+    </div>
+
+    <div>
+        <h2>Item 2</h2>
+        <input type="number" placeholder="Insira o Código da 2 peça" id="cod-2">
+        <input type="number" placeholder="Quantidade de peças." id="quantidade2">
+        <input type="number" placeholder="Valor unitário." id="valor2">
+    </div>
+
+    <p id="respostaTexto">Resultado ::</p>
+    <button onclick="soma()">Resultado</button>
+    <script>
+        function soma() {
+            let qtd1 = parseInt(document.getElementById("quantidade1").value);
+            let vlr1 = parseInt(document.getElementById("valor1").value);
+
+            var resu1 = qtd1 * vlr1 // 8 reais - item 1
+
+            let qtd2 = parseInt(document.getElementById("quantidade2").value);
+            let vlr2 = parseInt(document.getElementById("valor2").value);
+
+            var resu2 = qtd2 * vlr2
+
+            var total = resu1 + resu2
+
+            var txt = document.getElementById("respostaTexto");
+            txt.innerHTML = (`O resultado é ${total}`) 
+     }
+    </script>
+</body>
+
+</html>

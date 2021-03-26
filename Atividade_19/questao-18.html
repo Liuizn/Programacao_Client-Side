@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 18</title>
+
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        body {
+            background-color: teal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            color: black;
+        }
+
+        button {
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Atividade 18</h1>
+    <br>
+
+    <div class="container">
+        <h2>Qual a sua idade?</h2>
+        <input type="number" name="" id="senha">
+        <button onclick="resultado()">Enviar</button>
+
+        <p id="txt">**Aguardando Resposta</p>
+    </div>
+
+    <script>
+        function resultado() {
+            let idade = parseInt(document.getElementById("senha").value)
+
+            let txt = document.getElementById("txt")
+
+            if (idade == 2002) {
+                txt.innerHTML = ("Senha Correta.")
+            } else {
+                txt.innerHTML = ("Senha Incorreta.")
+            }
+        }
+    </script>
+</body>
+
+</html>
