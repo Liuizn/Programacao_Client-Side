@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #texto {
+            color: black;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="texto">Teste</h1>
+
+
+    <button id="cor" onclick="cor()">Altere a cor</button>
+    <button id="fonte" onclick="fonte()">Altere a fonte</button>
+    <button id="bg" onclick="bg()">Altere o background</button>
+    <br><br>
+    <button id="cor" onclick="Vcor()">Restaurar a cor</button>
+    <button id="fonte" onclick="Vfonte()">Restaurar a fonte</button>
+    <button id="bg" onclick="Vbg()">Restaurar o background</button>
+
+    <script>
+        // Primeiro Bloco de Botões
+        function cor() {
+            document.querySelector("#texto").style.color = "#800080";
+        }
+
+        function fonte() {
+            document.querySelector("#texto").style.fontSize = "72px";
+        }
+
+        function bg() {
+            document.querySelector("body").style.background = "#000000";
+        }
+
+        //Segundo Bloco de Botões 
+        function Vcor() {
+            document.querySelector("#texto").style.color = "#000000";
+        }
+
+        function Vfonte() {
+            document.querySelector("#texto").style.fontSize = "36px";
+        }
+
+        function Vbg() {
+            document.querySelector("body").style.background = "#ffffff";
+        }
+    </script>
+
+</body>
+
+</html>
