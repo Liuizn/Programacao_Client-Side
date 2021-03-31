@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .inpuut {
+            width: 500px;
+        }
+
+        input {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Atividade 20</h1>
+    <h2>Monitorando Paciente</h2>
+
+    <div class="inpuut">
+        <input type="range" name="" id="inputt" min="0" max="12" step="1" value="0">
+    </div>
+    <br><br>
+    <button id="botao" onclick="clicar()">Chamar</button>
+    <h3 id="resposta"></h3>
+
+
+    <script>
+        function clicar() {
+            let clickk = parseInt(document.getElementById("inputt").value);
+
+            let resposta = document.getElementById("resposta");
+
+            if (clickk == 0) {
+
+                resposta.innerHTML = "Quarto Chamando : ."
+
+            } else if (clickk >= 1 && clickk <= 3) {
+
+                document.querySelector("body").style.background = "#dddd12"
+                resposta.innerHTML = "Quarto Chamando : Técnico de Enfermagem."
+
+            } else if (clickk >= 4 && clickk <= 8) {
+                document.querySelector("body").style.background = "#ff0000"
+                document.querySelector("body").style.color = "#fff"
+                resposta.innerHTML = "Quarto Chamando : Enfermeira."
+
+            } else {
+
+                document.querySelector("body").style.background = "#000"
+                document.querySelector("body").style.color = "#fff"
+                resposta.innerHTML = "Quarto Chamando : Médico."
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
