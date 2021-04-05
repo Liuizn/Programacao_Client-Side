@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        .inputs-pai {
+            border: 1px solid red;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cores RGB</h1>
+
+    <h2>Manipule os Inputs, para uma cor diferente</h2>
+    <div class="inputs-pai">
+
+        <div class="inputs">
+            <h3>(R) Vermelho</h3>
+            <input type="range" name="R" id="Vermelho" min="0" max="255" value="0" step="1">
+            <input type="text" name="value-R" id="value-Ver" onload="valoresR()">
+        </div>
+
+
+        <div class="inputs">
+            <h3>(G) Verde</h3>
+            <input type="range" name="G" id="Verde" min="0" max="255" value="0" step="1">
+            <input type="text" name="value-G" id="value-Verd">
+        </div>
+
+        <div class="inputs">
+            <h3>(B) Azul</h3>
+            <input type="range" name="B" id="Azul" min="0" max="255" value="0" step="1">
+            <input type="text" name="value-B" id="value-Blu">
+        </div>
+    </div>
+
+    <script>
+        var vermelho = document.querySelector("#Vermelho")
+        var verde = document.querySelector("#Verde")
+        var azul = document.querySelector("#Azul")
+
+        function valoresR() {
+            vermelho = document.querySelector("#vermelho").value
+            alert(vermelho)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bloco">
+            <h1>Calculo de salário liquido</h1>
+            <div>
+                <input type="number" id="salario" name="salario" placeholder="Qual o seu salário?">
+                <button class="calculo">Calcular</button>
+            </div>
+            <div class="resultado"></div>
+
+        </div>
+        <script>
+            document.querySelector('.calculo').addEventListener('click', () => {
+                var salario = Number(document.querySelector('#salario').value)
+                var resultado= document.querySelector('.resultado')
+
+
+                if (salario > 0 && salario < 1100) {
+                    var desc = (salario * 7.5) / 100
+                    desc = ((salario * 7.5) / 100) + desc
+                    salario = salario - desc
+                    resultado.innerHTML = `R$ ${salario} reais`
+
+                } else if (salario < 2203, 48) {
+                    var desc = (salario * 9) / 100
+                    desc = ((salario * 9) / 100) + desc
+                    salario = salario - desc
+
+                    resultado.innerHTML = `R$ ${salario} reais`
+                } else if (salario < 3305, 22) {
+                    var desc = (salario * 12) / 100
+                    desc = ((salario * 12) / 100) + desc
+                    salario = salario - desc
+                    resultado.innerHTML = `R$ ${salario} reais`
+                } else if (salario < 6433, 57) {
+                    var desc = (salario * 14) / 100
+                    desc = ((salario * 14) / 100) + desc
+                    salario = salario - desc
+                    resultado.innerHTML = `R$ ${salario} reais`
+                }
+
+            })
+        </script>
+</body>
+
+</html>
