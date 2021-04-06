@@ -14,7 +14,6 @@
         }
 
         body {
-            border: 1px solid red;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -37,6 +36,13 @@
             flex-direction: row;
             margin-top: 50px;
         }
+
+        .cor {
+            margin-top: 50px;
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
     </style>
 </head>
 
@@ -48,34 +54,41 @@
 
         <div class="inputs">
             <h3>(R) Vermelho</h3>
-            <input type="range" name="R" id="Vermelho" min="0" max="255" value="0" step="1">
-            <input type="text" name="value-R" id="value-Ver" onload="valoresR()">
+            <input type="range" name="R" id="vermelho" min="0" max="255" value="0" step="1" onchange="cor()">
+            <input type="number" name="value-R" id="value-vermelho" disabled>
         </div>
 
 
         <div class="inputs">
             <h3>(G) Verde</h3>
-            <input type="range" name="G" id="Verde" min="0" max="255" value="0" step="1">
-            <input type="text" name="value-G" id="value-Verd">
+            <input type="range" name="G" id="verde" min="0" max="255" value="0" step="1" onchange="cor()">
+            <input type="text" name="value-G" id="value-verde" disabled>
         </div>
 
         <div class="inputs">
             <h3>(B) Azul</h3>
-            <input type="range" name="B" id="Azul" min="0" max="255" value="0" step="1">
-            <input type="text" name="value-B" id="value-Blu">
+            <input type="range" name="B" id="azul" min="0" max="255" value="0" step="1" onchange="cor()">
+            <input type="text" name="value-B" id="value-azul" disabled>
         </div>
     </div>
 
+    <div class="cor" id="resultado">
+
+    </div>
+
     <script>
-        var vermelho = document.querySelector("#Vermelho")
-        var verde = document.querySelector("#Verde")
-        var azul = document.querySelector("#Azul")
+        function cor() {
+            let vermelho = parseInt(document.querySelector("#vermelho").value)
+            document.querySelector("#value-vermelho").value = vermelho
 
-        function valoresR() {
-            vermelho = document.querySelector("#vermelho").value
-            alert(vermelho)
+            let verde = parseInt(document.querySelector("#verde").value)
+            document.querySelector("#value-verde").value = verde
+
+            let azul = parseInt(document.querySelector("#azul").value)
+            document.querySelector("#value-azul").value = azul
+
+            document.querySelector("#resultado").style.background = `rgb(${vermelho} ${verde} ${azul})`
         }
-
     </script>
 </body>
 

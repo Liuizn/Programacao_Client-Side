@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação formulário</title>    
+</head>
+<body>
+    <form action="form.js">
+        <label for="Nome">Nome: </label>
+        <input type="text" name="Nome" id="nome">
+        
+        <label for="email">E-mail: </label>
+        <input type="text" name="E=mail" id="email">
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="Telefone" id="telefone">
+
+        <input type="submit" value="Cadastrar" onclick="return validarForm()">
+    </form>
+
+
+    <script>
+        function validarForm() {
+            let nome = document.querySelector("#nome").value
+            let email = document.querySelector("#email").value
+            let telefone = document.querySelector("#telefone").value
+
+            if (nome == "") {
+                alert("Campo de nome obrigatório.")
+                return false
+            }
+
+            if (email == "") {
+                alert("Campo de E-mail obrigatório")
+                return false
+            }
+
+            if (telefone == "") {
+                alert("Campo de telefone obrigatório")
+                return false
+
+            }
+        }
+    </script>
+</body>
+</html>
