@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="form.js">
+        <label for="Nome">Nome: </label>
+        <input type="text" name="Nome" id="nome" required>
+        <p id="resposta-nome"></p>
+
+        <label for="email">E-mail: </label>
+        <input type="text" name="E=mail" id="email" required>
+        <p id="resposta-email"></p>
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="Telefone" id="telefone" required>
+        <p id="resposta-telefone"></p>
+
+        <input type="submit" value="Cadastrar" onclick="return myFunction()">
+    </form>
+
+
+
+    <script>
+        function myFunction() {
+            var nome = document.getElementById("nome");
+            var email = document.getElementById("email");
+            var telefone = document.getElementById("telefone")
+            if (!nome.checkValidity()) {
+                document.getElementById("resposta-nome").innerHTML = nome.validationMessage
+            }
+            if (!email.checkValidity()) {
+                document.getElementById("resposta-email").innerHTML = email.validationMessage
+            }
+
+            if (!telefone.checkValidity()) {
+                document.getElementById("resposta-telefone").innerHTML = telefone.validationMessage
+            }
+        }
+    </script>
+</body>
+
+</html>
