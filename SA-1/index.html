@@ -5,286 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto WEB</title>
+    <title>Liuzn - Home</title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="nav" id="purplee">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfólio | Projetos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <img src="logo/logo1.png" alt="" id="logo">
+        <nav class="nav" id="purple">
+            <ul class="flex-nav">
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
 
-        <img src="Backgrounds-img/foto2.jpg" alt="" width="73%" id="bg">
+        <div class="banner">
+            <img src="logo/logo1.png" alt="">
+            <img src="Backgrounds-img/foto1.jpg" id="display" alt="">
+        </div>
+
+        <nav class="nav" id="purple">
+            <ul class="flex-nav">
+                <li><a href="">Bem Vindo</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Formações</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav class="nav2" id="purplee">
-        <ul>
-            <li><a href="#primeiro">Bem Vindo!</a></li>
-            <li><a href="#segundo">Sobre</a></li>
-            <li><a href="#terceiro">Formações</a></li>
-        </ul>
-    </nav>
 
     <main>
 
-        <h1 id="projeto">Bem Vindo!</h1>
-        <div class="form-home">
-            <div class="container-pai">
+        <h1 class="title">Bem Vindo!</h1>
 
-                <div class="container-individual" id="primeiro">
+        <section class="home flex-section">
+            <div class="resumo">
+                <h2>Resumo</h2>
 
-                    <h1>Resumo</h1>
+                <img src="foto-home2.JPG" alt="">
+                <p>Olá, meu nome é Luiz Gabriel, seja muito bem vindo ao meu site. Tenho 18 anos e sou um estudante na
+                    programação. Desejo ser um desenvolvedor Full-stack. Tenho projetos de Identidade de uma Sorveteria,
+                    Museu Nacional e entre outros.</p>
+            </div>
+            <div class="minha-stack">
+                <h2>Minha Stack</h3>
 
-                    <img src="foto-home2.JPG" width="400px" height="400px" alt="" id="espacamento-1">
-                    <p id="espacamento-1" style="text-align: justify;">Olá, meu nome é Luiz Gabriel, seja muito bem vindo ao meu site. Tenho 18 anos
-                        e
-                        sou um estudante na programação. Desejo ser um desenvolvedor Full-stack. Tenho projetos de
-                        Identidade de uma Sorveteria, Museu Nacional e entre outros.</p>
-
-
-                    <input type="button" value="Baixar Currículo">
-                </div>
-
-                <div class="container-individual" id="stack">
-
-                    <h1>Minha Stack</h1>
-
-                    <h2>Front-end</h2>
-
-                    <div class="container-pai-progressbar">
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="oitenta">
-                                    <h5>80%</h5>
-                                </div>
-                            </div>
-                            <h4>HTML</h4>
+                    <div class="background">
+                        <h4>HTML</h4>
+                        <div class="f-barra-progresso">
+                            <div class="barra-progresso"></div>
                         </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="setentacinco">
-                                    <h5>75%</h5>
-                                </div>
-                            </div>
-                            <h4>CSS</h4>
+                        <h4>CSS</h4>
+                        <div class="f-barra-progresso">
+                            <div class="barra-progresso"></div>
                         </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="vintecinco">
-                                    <h5>25%</h5>
-                                </div>
-                            </div>
-                            <h4>JavaScript</h4>
+                        <h4>JS</h4>
+                        <div class="f-barra-progresso">
+                            <div class="barra-progresso"></div>
                         </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinquenta">
-                                    <h5>50%</h5>
-                                </div>
-                            </div>
-                            <h4>Bootstrap 4</h4>
+                        <h4>Bootstrap</h4>
+                        <div class="f-barra-progresso">
+                            <div class="barra-progresso"></div>
                         </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>TypeScript</h4>
+                        <h4>c# | .NET</h4>
+                        <div class="f-barra-progresso">
+                            <div class="barra-progresso"></div>
                         </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>Angular</h4>
-                        </div>
-
                     </div>
+            </div>
+        </section>
 
-                    <h2>Back-end</h2>
+        <section class="sobre flex-section">
+            <div class="sobre-texto">
+                <h2>Sobre</h2>
+                <p>
+                    Meu nome é Luiz Gabriel dos Santos Nogueira. Nasci no dia 30 de dezembro de 2002, em Belo
+                    Horizonte (Cidade na qual ainda moro), Minas Gerais.
+                </p>
 
-                    <div class="container-pai-progressbar">
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>C# | .NET</h4>
-                        </div>
+                <p>
+                    Tenho formação e experiência com design gráfico e logística, área na qual trabalhei por 1 ano na
+                    Empresa Brasileira de Correios e Telegráfos. Atualmente estou fazendo o curso técnico de
+                    Desenvolvimento de Sistemas no SENAI-MG, e outros cursos de ensino a distância da mesma área.
+                </p>
 
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>PHP</h4>
-                        </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>Node.JS</h4>
-                        </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>MySQL</h4>
-                        </div>
-
-                        <div class="tec-progress">
-                            <div class="container-progressbar">
-                                <div class="progress-bar" id="cinco">
-                                    <h5>5%</h5>
-                                </div>
-                            </div>
-                            <h4>SQL server</h4>
-                        </div>
-
-                    </div>
-
-                </div>
+                <p>
+                    Sempre tenho um bom astral e humor para executar as tarefas do dia da melhor maneira possível,
+                    Também tenho dedicação e foco em qualquer situação. Além disso, sou apaixonado por
+                    futebol(exclusivamente pelo clube Atlético Mineiro), tecnologia e moda.
+                </p>
             </div>
 
-            <div class="container-triplo" id="segundo">
-                <div class="textto">
-                    <h2>Sobre</h2>
-                    <p>
-                        Meu nome é Luiz Gabriel dos Santos Nogueira. Nasci no dia 30 de dezembro de 2002, em Belo
-                        Horizonte (Cidade na qual ainda moro), Minas Gerais.
-                    </p>
-
-                    <p>
-                        Tenho formação e experiência com design gráfico e logística, área na qual trabalhei por 1 ano,
-                        na Empresa Brasileira de Correios e Telegráfos. Atualmente estou fazendo o curso técnico de
-                        Desenvolvimento de Sistemas no SENAI-MG, e outros cursos de ensino a distância da mesma área.
-                    </p>
-
-                    <p>
-                        Sempre tenho um bom astral e humor para executar as tarefas do dia da melhor maneira possível, e
-                        também tenho dedicação e foco em qualquer situação. Além disso, sou apaixonado por futebol
-                        (exclusivamente pelo clube Atlético Mineiro), tecnologia e moda.
-                    </p>
-                </div>
-
-                <div class="foto">
-                    <img src="foto-home1.jpeg" alt="">
-                </div>
-
-                <div class="textto">
-                    <h2>Clientes</h2>
-
-                    <div class="fotos-clientes">
-                        <img src="fotos-cliente/megasabor.png" alt="">
-                        <img src="fotos-cliente/netflix.png" alt="">
-                        <img src="fotos-cliente/spotify.png" alt="">
-                        <img src="fotos-cliente/apple.jpeg" alt="">
-                        <img src="fotos-cliente/senai.jpg" alt="">
-                        <img src="fotos-cliente/amazon.jpg " alt="">
-                    </div>
-
-                </div>
+            <div class="picture">
+                <img src="foto-home1.jpeg" alt="">
             </div>
+        </section>
 
-        </div>
-
-        <div class="container-tabela" id="terceiro">
+        <section class="cursos flex-section">
             <h2>Formações</h2>
-
-            <div class="tabela">
-                <div class="tabela-linha">
-                    <div class="tabela-celula">
-                        <h1>Curso</h1>
-                    </div>
-                    <div class="tabela-celula">
-                        <h1>Plataforma</h1>
-                    </div>
-                    <div class="tabela-celula">
-                        <h1>Duração</h1>
-                    </div>
-                    <div class="tabela-celula">
-                        <h1>Início | Conclusão</h1>
-                    </div>
+            <div class="background tabela">
+                <div class="header-tabela">
+                    <h3>Cursos</h3>
+                    <h3>Plataforma</h3>
+                    <h3>Duração</h3>
+                    <h3>Conclusão</h3>
                 </div>
-
                 <hr>
-                </hr>
 
-                <div class="tabela-linha">
-                    <div class="tabela-celula">
-                        <h2>Informática para Internet</h2>
+                <div class="body-tabela">
+                    <div class="row-tabela">
+                        <p>Informática para Internet</p>
+                        <p>Algoritmo</p>
+                        <p>Desenvolvimento Web</p>
+                        <p>c# e Orientação a Objetos</p>
                     </div>
-                    <div class="tabela-celula">
-                        <h2>SENAI-MG (Presencial | EAD)</h2>
+    
+                    <div class="row-tabela">
+                        <p>SENAI</p>
+                        <p>Curso em Vídeo</p>
+                        <p>Udemy</p>
+                        <p>Udemy</p>
                     </div>
-                    <div class="tabela-celula">
-                        <h2>1200 Horas</h2>
+    
+                    <div class="row-tabela">
+                        <p>1200 horas</p>
+                        <p>40horas</p>
+                        <p>110 Horas</p>
+                        <p>38 Horas</p>
                     </div>
-                    <div class="tabela-celula">
-                        <h2>Fev 2020 | Dez 2021</h2>
-                    </div>
-                </div>
-
-                <div class="tabela-linha">
-                    <div class="tabela-celula">
-                        <h2>Algoritmo</h2>
-                    </div>
-                    <div class="tabela-celula"><a href="https://www.cursoemvideo.com/" target="_blank">
-                            <h2>Curso em Vídeo</h2>
-                        </a></div>
-                    <div class="tabela-celula">
-                        <h2>40 Horas</h2>
-                    </div>
-                    <div class="tabela-celula">
-                        <h2>Mai 2020 | Jul 2020</h2>
-                    </div>
-                </div>
-
-                <div class="tabela-linha">
-                    <div class="tabela-celula">
-                        <h2>Desenvolvimento Web Completo</h2>
-                    </div>
-                    <div class="tabela-celula"><a href="https://www.udemy.com/course/web-completo/" target="_blank">
-                            <h2>Udemy</h2>
-                        </a></div>
-                    <div class="tabela-celula">
-                        <h2>110 Horas</h2>
-                    </div>
-                    <div class="tabela-celula">
-                        <h2>Nov 2020 | Jul 2021</h2>
+    
+                    <div class="row-tabela">
+                        <p>Fev 20 | Dez 21</p>
+                        <p>Mai 20 | Jul 20</p>
+                        <p>Nov 20 | Jul 21</p>
+                        <p>Mar 21 | Ago 21</p>
                     </div>
                 </div>
             </div>
-        </div>
-
-
+        </section>
     </main>
-
-    <footer id="purplee">
-        <h4>Liuizn | Última alteração 22/03/2021 as 05:40 &COPY;</h4>
-    </footer>
 
 </body>
 
