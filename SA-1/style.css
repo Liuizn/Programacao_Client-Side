@@ -325,6 +325,24 @@ main {
         border-radius: 40px;
     }
 
+    .tabela {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .header-tabela h3 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .row-tabela p {
+        font-size: 0.8em;
+        flex-wrap: wrap;
+    }
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -410,6 +428,24 @@ main {
         border: 6px solid #361f36;
         border-radius: 40px;
     }
+
+    .tabela {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .header-tabela h3 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .row-tabela p {
+        font-size: 0.8em;
+        flex-wrap: wrap;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -431,7 +467,7 @@ main {
         justify-content: space-evenly;
         text-align: center;
         width: 80%;
-        height: 600px;
+        height: 700px;
     }
 
     .resumo p {
@@ -444,10 +480,10 @@ main {
     }
 
     .minha-stack {
-
+        margin-top: 50px;
         align-items: center;
         justify-content: space-evenly;
-        width: 80%;
+        width: 100%;
     }
 
     .background {
@@ -465,6 +501,10 @@ main {
     .resumo p {
         color: #dbc4c4;
         font-size: 1em;
+    }
+
+    .sobre {
+        margin-top: 50px;
     }
 
     .sobre-texto {
@@ -499,6 +539,28 @@ main {
         border-radius: 40px;
     }
 
+    .cursos {
+        margin-top: 50px;
+    }
+
+    .tabela {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+    }
+
+    .header-tabela h3 {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .row-tabela p {
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -522,7 +584,8 @@ main {
     }
 
     .resumo img {
-        width: 60%;
+        align-self: center;
+        width: 50%;
     }
 
     .minha-stack {
@@ -570,6 +633,8 @@ main {
         border: 6px solid #361f36;
         border-radius: 40px;
     }
+
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
