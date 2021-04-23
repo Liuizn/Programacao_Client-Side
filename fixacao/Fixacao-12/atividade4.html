@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixação12
+    </title>
+
+    <style>
+        .btn {
+            padding: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .espacamento {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="teste">
+        <input type="text" id="nome" name="nome" value="Gabriel">
+        <button class="btn">Alterar</button>
+    </main>
+
+    <script>
+        var evento = document.querySelector('.btn').addEventListener('click', () => {
+            let campo = document.querySelector('#nome').getAttribute("value")
+            let main = document.querySelector('.teste')
+            let div = document.createElement("div")
+            
+            main.appendChild(div)
+            div.innerHTML = campo
+            div.classList.add("espacamento")
+        })
+    </script>
+    
+</body>
+</html>

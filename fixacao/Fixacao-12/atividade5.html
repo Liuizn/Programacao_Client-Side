@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixação12
+    </title>
+
+    <style>
+        .btn {
+            padding: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .espacamento {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="teste">
+        <button class="btn">Criar</button>
+    </main>
+
+    <script>
+        var evento = document.querySelector('.btn').addEventListener('click', () => {
+            let main = document.querySelector('.teste')
+            let div = document.createElement("div")
+            let p = document.createElement("p")
+            let texto = document.createTextNode("Texto Criado dinamicamente")
+
+            p.appendChild(texto)
+            div.appendChild(p)
+            
+            main.appendChild(div)
+            div.innerHTML = campo
+            div.classList.add("espacamento")
+        })
+    </script>
+    
+</body>
+</html>
