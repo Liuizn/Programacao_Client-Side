@@ -15,22 +15,21 @@
         <nav class="nav" id="purple">
             <ul class="flex-nav">
                 <li><a href="index.html" id="active">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
         <div class="banner">
-            <img src="logo/logo1.png" alt="">
-            <img src="Backgrounds-img/foto1.jpg" id="display" alt="">
+            <img src="img/logo/logo1.png" alt="">
+            <img src="img/Backgrounds/foto1.jpg" id="display" alt="">
         </div>
 
         <nav class="nav" id="purple">
-            <ul class="flex-nav">
-                <li><a href="">Bem Vindo</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Formações</a></li>
+            <ul class="flex-nav menu">
+                <li><a href="#aprese-stack">Apresentação | Stack</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formações</a></li>
             </ul>
         </nav>
     </header>
@@ -40,10 +39,10 @@
         <h1 class="title">Bem Vindo!</h1>
 
         <section class="home flex-section">
-            <div class="resumo">
-                <h2>Resumo</h2>
+            <div class="resumo" id="aprese-stack">
+                <h2>Apresentação</h2>
 
-                <img src="foto-home2.JPG" alt="">
+                <img src="img/pictures/foto1.jpeg" alt="">
                 <p>Olá, meu nome é Luiz Gabriel, seja muito bem vindo ao meu site. Tenho 18 anos e sou um estudante na
                     programação. Desejo ser um desenvolvedor Full-stack. Tenho projetos de Identidade de uma Sorveteria,
                     Museu Nacional e entre outros.</p>
@@ -54,11 +53,11 @@
                     <div class="background">
                         <h4>HTML</h4>
                         <div class="f-barra-progresso">
-                            <div class="barra-progresso"></div>
+                            <div class="barra-progresso" id="oitenta"></div>
                         </div>
                         <h4>CSS</h4>
                         <div class="f-barra-progresso">
-                            <div class="barra-progresso"></div>
+                            <div class="barra-progresso" id="setenta-cinco"></div>
                         </div>
                         <h4>JS</h4>
                         <div class="f-barra-progresso">
@@ -66,7 +65,7 @@
                         </div>
                         <h4>Bootstrap</h4>
                         <div class="f-barra-progresso">
-                            <div class="barra-progresso"></div>
+                            <div class="barra-progresso" id="cinquenta"></div>
                         </div>
                         <h4>C#</h4>
                         <div class="f-barra-progresso">
@@ -76,7 +75,7 @@
             </div>
         </section>
 
-        <section class="sobre flex-section">
+        <section class="sobre flex-section" id="sobre">
             <div class="sobre-texto">
                 <h2>Sobre</h2>
                 <p>
@@ -98,11 +97,11 @@
             </div>
 
             <div class="picture">
-                <img src="foto-home1.jpeg" alt="">
+                <img src="img/pictures/foto2.jpeg" alt="">
             </div>
         </section>
 
-        <section class="cursos flex-section">
+        <section class="cursos flex-section" id="formacao">
             <h2>Formações</h2>
             <div class="background tabela">
                 <div class="header-tabela">
@@ -149,6 +148,8 @@
     <footer id="purple">
         <p>Luiz Gabriel dos Santos Nogueira | &copy; Liuizn </p>
     </footer>
+
+    <script src="scroll.js"></script>
 </body>
 
 </html>
