@@ -11,7 +11,7 @@ function rolarDuranteClick(event) {
     const to = document.querySelector(id).offsetTop;
 
     window.scroll({
-        top: to - 80,
+        top: to -160,
         behavior: "smooth"
     })
 };
